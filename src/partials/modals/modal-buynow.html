@@ -1,0 +1,69 @@
+<button class="test-button js-open-modal" data-modal="1" type="button" id="modal-buy-now-open">тимчасова кнопка
+    1</button>
+<button class="test-button js-open-modal" data-modal="2" type="button" id="open-modal-2">тимчасова кнопка 2</button>
+<button class="test-button js-open-modal" data-modal="3" type="button" id="open-modal-3">тимчасова кнопка 3</button>
+<button class="test-button js-open-modal" data-modal="4" type="button" id="open-modal-4">тимчасова кнопка 4</button>
+<button class="test-button js-open-modal" data-modal="5" type="button" id="open-modal-5">тимчасова кнопка 5</button>
+<button class="test-button js-open-modal" data-modal="5" type="button" id="open-modal-6">тимчасова кнопка 6</button>
+
+
+
+
+<div class="overlay js-overlay-modal">
+</div>
+
+<div class="modal modal-buy-now" data-modal="1">
+
+    <!-- close button -->
+    <button class="modal__close-btn js-modal-close" type="button" id="modal-buy-now-close">
+        <svg class="modal__close-icon">
+            <use class="modal-close__vector" href="./images/icons.svg#close-little"></use>
+        </svg>
+    </button>
+
+    <!-- title -->
+    <h2 class="modal__title">Buy now</h2>
+
+    <!-- checkboxes -->
+    <ul class="buy-now__products">
+        <li class="buy-now__product">
+            <div class="buy-now__box">
+                <img src="#" alt="ice cream" width="132p" height="132">
+                <p class="buy-now__type">ice cream</p>
+            </div>
+
+        </li>
+        <li class="buy-now__product">
+            <div class="buy-now__box">
+                <img src="#" alt="ice cream" width="132p" height="132">
+                <p class="buy-now__type">ice coffee</p>
+            </div>
+        </li>
+        <li class="buy-now__product">
+            <div class="buy-now__box">
+                <img src="#" alt="ice cream" width="132p" height="132">
+                <p class="buy-now__type">milkshake</p>
+            </div>
+        </li>
+    </ul>
+
+    <!-- form -->
+    <form class="buy-now__form form" action="">
+        <label class="buy-now__label" for="">
+            Name
+            <input class="buy-now__input-name" type="text">
+        </label>
+
+        <label class="buy-now__label">
+            Phone
+            <input class="buy-now__input-tel" type="tel">
+        </label>
+
+        <label class="buy-now__label">
+            Comment
+            <textarea class="buy-now__textarea" cols="10" rows="10"></textarea>
+        </label>
+
+        <button class="buy-now__button" type="submit">Submit</button>
+    </form>
+</div>
