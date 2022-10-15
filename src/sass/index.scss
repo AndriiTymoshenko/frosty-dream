@@ -1,6 +1,42 @@
-@import './utils/vars';
+// Variables and placeholders ⛔️ Do not change
+
+@import './utils/vars'; 
 @import './utils/placeholders';
 
+// Base styles ⛔️ Do not change
 @import './components/base/base-styles';
 @import './components/base/common';
+
+// Web components 
+
+// Maria part 💻
+@import './components/header';
+@import './components/hero';
+
+// Ivan part 💻
+@import './components/products';
+
+//  Andrii part 💻
+@import './components/about';
+@import './components/advantages';
+
+// Eugene part 💻
+@import './components/gallery';
+
+// Kostia part 💻
+@import './components/customer-review';
+
+// Serhii part 💻
 @import './components/contacts';
+@import './components/footer';
+
+
+// Modals 
+
+// Olexandr part 💻
+@import './modals/modal-buynow';
+@import './modals/modal-franchise';
+@import './modals/modal-howmade';
+@import './modals/modal-ingredients';
+@import './modals/modal-locations';
+@import './modals/modal-readmore';
