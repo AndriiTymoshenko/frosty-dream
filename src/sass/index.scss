@@ -4,8 +4,10 @@
 @import './utils/placeholders';
 
 // Base styles ⛔️ Do not change
-@import './components/base/base-styles';
 @import './components/base/common';
+@import './components/base/base-styles';
+@import './components/base/buttons';
+
 
 // Web components 
 
