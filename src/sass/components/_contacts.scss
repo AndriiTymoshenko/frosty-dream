@@ -1,3 +1,84 @@
-.contacts {
-    
+.contacts {}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-cards {
+    @extend %list;
+
+    padding: 40px 32px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+
+    background-color: $primary-light-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.contacts-cards__divide {
+    @extend %list;
+
+    &:not(:first-child) {
+        padding-top: 24px;
+        border-top: 1px solid $lines-color;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 24px;
+    }
+
+    &:nth-child(1) {
+        letter-spacing: 0.04em;
+    }
+}
+
+.contacts-cards__shoptype {
+    display: inline;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4px;
+
+    text-transform: uppercase;
+
+    background-color: $accent-color;
+}
+
+.contacts-cards__city {
+    margin-top: 20px;
+}
+
+.contacts-cards__adress {
+    margin-top: 8px;
+}
+
+.contacts-cards__adress-link {
+    @extend %link;
+
+    line-height: 1.83;
+
+    font-style: normal;
+    color: $product-red-background;
+}
+
+.contacts-cards__day {
+    &:not(:first-child) {
+        margin-top: 8px;
+    }
+}
+
+.contacts-cards__time {
+    color: $secondary-light-color;
+}
+
+.contacts-cards__telmail {
+    @extend %link;
+
+    display: block;
+    line-height: 1.5;
 }
