@@ -1,0 +1,42 @@
+.test-button {
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #414b52;
+  margin: 10px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: olive;
+  }
+}
+
+.modal-buy-now {
+}
+.buy-now__title {
+}
+.buy-now__products {
+  @extend %list;
+}
+.buy-now__product {
+}
+.buy-now__box {
+}
+.buy-now__type {
+}
+.buy-now__form {
+}
+.form {
+}
+.buy-now__label {
+}
+.buy-now__input-name {
+}
+.buy-now__input-tel {
+}
+.buy-now__textarea {
+}
+.buy-now__button {
+}

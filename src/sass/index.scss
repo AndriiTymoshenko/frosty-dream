@@ -1,15 +1,15 @@
 // Variables and placeholders ⛔️ Do not change
 
-@import './utils/vars'; 
+@import './utils/vars';
 @import './utils/placeholders';
+@import './utils/mixins';
 
 // Base styles ⛔️ Do not change
 @import './components/base/common';
 @import './components/base/base-styles';
 @import './components/base/buttons';
 
-
-// Web components 
+// Web components
 
 // Maria part 💻
 @import './components/header';
@@ -32,10 +32,10 @@
 @import './components/contacts';
 @import './components/footer';
 
-
-// Modals 
+// Modals
 
 // Olexandr part 💻
+@import './modals/modal-base';
 @import './modals/modal-buynow';
 @import './modals/modal-franchise';
 @import './modals/modal-howmade';
