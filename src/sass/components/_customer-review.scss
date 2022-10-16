@@ -1,0 +1,110 @@
+.swiper-wrapper {
+    @extend %list;
+    text-align: center;
+}
+.swiper-slide {
+    width: 100%;
+    height: 466px;
+
+    @media screen and (min-width: 360px) {
+        height: 428px;
+    }
+
+    @media screen and (min-width: 446px) {
+        height: 400px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 353px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 382px;
+    }
+}
+.customer-reviews__avatar {
+    border-radius: 50%;
+    margin: 0 auto;
+
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin-bottom: 28px;
+    }
+}
+.customer-reviews__comment {
+    font-family: $primary-font;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+
+    text-align: center;
+
+    padding: 34px 39px;
+    margin-bottom: 30px;
+
+    color: $primary-light-color;
+    background-color: $primary-background-color;
+    border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+
+        letter-spacing: 0.04em;
+
+        padding: 28px 80px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        padding: 39px 109px 47px;
+        margin-bottom: 32px;
+    }
+}
+.customer-reviews__info {
+    font-family: $primary-font;
+    font-weight: 500;
+
+    font-size: 20px;
+    line-height: 186%;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: $primary-dark-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+}
+.swiper-pagination {
+    gap: 18px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+
+    background-color: #d9d9d9;
+    opacity: 1;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $primary-background-color;
+}
