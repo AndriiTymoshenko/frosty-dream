@@ -24,46 +24,93 @@
     <!-- title -->
     <h2 class="modal__title">Buy now</h2>
 
-    <!-- checkboxes -->
-    <ul class="buy-now__products">
-        <li class="buy-now__product">
-            <div class="buy-now__box">
-                <img src="#" alt="ice cream" width="132p" height="132">
-                <p class="buy-now__type">ice cream</p>
-            </div>
-
-        </li>
-        <li class="buy-now__product">
-            <div class="buy-now__box">
-                <img src="#" alt="ice cream" width="132p" height="132">
-                <p class="buy-now__type">ice coffee</p>
-            </div>
-        </li>
-        <li class="buy-now__product">
-            <div class="buy-now__box">
-                <img src="#" alt="ice cream" width="132p" height="132">
-                <p class="buy-now__type">milkshake</p>
-            </div>
-        </li>
-    </ul>
 
     <!-- form -->
-    <form class="buy-now__form form" action="">
-        <label class="buy-now__label" for="">
-            Name
-            <input class="buy-now__input-name" type="text">
-        </label>
+    <form class="buy-now__form form">
+        <!-- checkboxes -->
+        <ul class="buy-now__products">
 
-        <label class="buy-now__label">
-            Phone
-            <input class="buy-now__input-tel" type="tel">
-        </label>
+            <li class="buy-now__product">
+                <input class="buy-now__checkbox visually-hidden" type="checkbox" name="ice-cream-type" value="ice-cream"
+                    id="buy-now-checkbox-1">
 
-        <label class="buy-now__label">
-            Comment
-            <textarea class="buy-now__textarea" cols="10" rows="10"></textarea>
-        </label>
+                <label for="buy-now-checkbox-1" class="buy-now__checkbox-label  buy-now__box buy-now__box--top">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset=" ./images/products/desktop/dt-product@1x.png 1x, ./images/products/desktop/dt-product@2x.png 2x"
+                            type="image/jpg" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/products/tablet/tab-product@1x.png 1x, ./images/products/tablet/tab-product@2x.png 2x"
+                            type="image/jpg" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/products/mobile/mb-product@1x.png 1x, ./images/products/mobile/mb-product@2x.png 2x"
+                            type="image/jpg" />
+                        <img class="buy-now__image buy-now__image--top" src="./images/products/mobile/mb-product@1x.png"
+                            alt="ice-cream" width="132" height="132" loading="lazy" />
+                    </picture>
+                    <span class="buy-now__ellipse buy-now__ellipse--top"></span>
+                    <span class="buy-now__text">ice cream</span>
+                </label>
+            </li>
 
-        <button class="buy-now__button" type="submit">Submit</button>
+            <li class="buy-now__product">
+                <input class="buy-now__checkbox visually-hidden" type="checkbox" name="ice-cream-type" value="ice-cream"
+                    id="buy-now-checkbox-2">
+
+                <label for="buy-now-checkbox-2" class="buy-now__checkbox-label  buy-now__box buy-now__box--middle">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset=" ./images/products/desktop/dt-product2@1x.png 1x, ./images/products/desktop/dt-product2@2x.png 2x"
+                            type="image/jpg" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/products/tablet/tab-product2@1x.png 1x, ./images/products/tablet/tab-product2@2x.png 2x"
+                            type="image/jpg" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/products/mobile/mb-product2@1x.png 1x, ./images/products/mobile/mb-product2@2x.png 2x"
+                            type="image/jpg" />
+                        <img class="buy-now__image buy-now__image--middle"
+                            src="./images/products/mobile/mb-product2@1x.png" alt="ice-cream" width="132" height="132"
+                            loading="lazy" />
+                    </picture>
+                    <span class="buy-now__ellipse buy-now__ellipse--middle"></span>
+                    <span class="buy-now__text">ice coffee</span>
+                </label>
+
+            </li>
+
+            <li class="buy-now__product">
+                <input class="buy-now__checkbox visually-hidden" type="checkbox" name="ice-cream-type" value="ice-cream"
+                    id="buy-now-checkbox-3">
+
+                <label for="buy-now-checkbox-3" class="buy-now__checkbox-label  buy-now__box buy-now__box--bottom">
+
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset=" ./images/products/desktop/dt-product3@1x.png 1x, ./images/products/desktop/dt-product3@2x.png 2x"
+                            type="image/jpg" />
+                        <source media="(min-width: 768px)"
+                            srcset="./images/products/tablet/tab-product3@1x.png 1x, ./images/products/tablet/tab-product3@2x.png 2x"
+                            type="image/jpg" />
+                        <source media="(max-width: 767px)"
+                            srcset="./images/products/mobile/mb-product3@1x.png 1x, ./images/products/mobile/mb-product3@2x.png 2x"
+                            type="image/jpg" />
+                        <img class="buy-now__image buy-now__image--bottom"
+                            src="./images/products/mobile/mb-product3@1x.png" alt="ice-cream" width="132" height="132"
+                            loading="lazy" />
+                    </picture>
+                    <span class="buy-now__ellipse buy-now__ellipse--bottom"></span>
+                    <span class="buy-now__text">milkshake</span>
+                </label>
+            </li>
+        </ul>
+
+        <input class="form__input buy-now__input-name" name="user-name" type="text" placeholder="Name"
+            pattern="[a-z]{1,15}" required>
+        <input class=" form__input buy-now__input-tel" name="user-tel" type="tel" placeholder="Phone"
+            pattern="[0-9]{3,15}" required>
+
+        <textarea class="buy-now__textarea form__textarea" placeholder="Comment" name="user-comment"
+            autocomplete="off"></textarea>
+        <button class="button form__submit button-buynow" type="submit">Submit</button>
     </form>
 </div>
