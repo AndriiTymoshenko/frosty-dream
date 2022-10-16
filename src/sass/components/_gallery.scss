@@ -1,0 +1,15 @@
+.gellery{
+    background: linear-gradient(180deg, #84a178 24px, #f5f5f5 0);
+
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(180deg, #84a178 164px, #f5f5f5 0);
+      }
+    
+      @media screen and (min-width: 1200px) {
+        background: linear-gradient(180deg, #84a178 94px, #f5f5f5 0);
+      }
+  }
+
+  .gellery__img{
+    margin: auto;
+  }
