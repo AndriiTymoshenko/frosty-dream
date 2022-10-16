@@ -1,46 +1,49 @@
 <section class="about section">
-  <div class="container">
+  <div class="about__container container">
+    <p class="about__title-label">tradition and love</p>
     <h2 class="title title--darck about__title">how it’s made?</h2>
-    <div class="about__img-bg">
-      <picture class="about__picture">
-        <source
-          media="(min-width: 1200px)"
-          srcset="./images/cow-dt@1x.jpg 1x, ./images/cow-dt@2x.jpg 2x"
-          type="image/jpg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="./images/cow-tb@1x.jpg 1x, ./images/cow-tb@2x.jpg 2x"
-          type="image/jpg"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="./images/cow-mb@1x.jpg 1x, ./images/cow-mb@2x.jpg 2x"
-          type="image/jpg"
-        />
+    <div class="about__flex-cont">
+      <div class="about__img-bg">
         <img
           class="about__img"
-          src="./images/cow-mb@1x.jpg"
+          srcset="
+            ./images/about/cow-mb_278w.png 278w,
+            ./images/about/cow-mb_556w.png 556w,
+            ./images/about/cow-tb_335w.png 335w,
+            ./images/about/cow-tb_670w.png 670w,
+            ./images/about/cow-dt_490w.png 490w,
+            ./images/about/cow-dt_980w.png 980w
+          "
+          sizes="(min-width: 1200px), (min-width: 768px), (min-width: 480px), 100vw"
+          src="./images/about/cow-mb_278w.png"
           alt="корова пасеться на лугу"
-          width="278"
-          height="278"
           loading="lazy"
         />
-      </picture>
+      </div>
+      <div class="about__flex-cont about__flex-desc">
+        <div class="about__desc-cont">
+          <p class="about__desc about__desc1">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+          <p class="about__desc about__desc2">
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
+          </p>
+          <p class="about__desc about__desc3">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </div>
+        <button
+          class="button button-buynow about__btn button--arrow"
+          type="button"
+        >
+          Read more
+        </button>
+      </div>
     </div>
-    <p class="about__desc">
-      Ice is a place where you will become not only a little happier, but also
-      healthier. Health is the main value for us, and we follow it when creating
-      our handmade desserts.
-    </p>
-    <p class="about__desc">
-      We use traditional recipes and 100% natural ingredients. Our products are
-      so natural that they can be given to children from the age of three years.
-      Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
-      milkshakes.
-    </p>
-    <button class="button button-buynow about__btn" type="button">
-      Read more
-    </button>
   </div>
 </section>
