@@ -1,3 +1,8 @@
+.products__container{
+    @media (min-width: 1200px) {
+        padding-inline: 12px;
+    }
+}
 .products__label {
     margin-bottom: 12px;
     font-family: $primary-font;
