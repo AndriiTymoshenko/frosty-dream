@@ -1,15 +1,184 @@
-.gellery{
-    background: linear-gradient(180deg, #84a178 24px, #f5f5f5 0);
+.gallery {
+    @media screen and (max-width: 767px) {
+        background-image: linear-gradient(
+            $primary-background-color 25%,
+            $primary-light-color 25% 100%
+        );
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: linear-gradient(
+            $primary-background-color 50%,
+            $primary-light-color 50% 100%
+        );
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(
+            $primary-background-color 20%,
+            rgba(255, 255, 255, 0) 0% 100%
+        );
+    }
+}
+
+.gallery__img {
+    margin: auto;
+    border-radius: 7.4px;
 
     @media screen and (min-width: 768px) {
-        background: linear-gradient(180deg, #84a178 164px, #f5f5f5 0);
-      }
-    
-      @media screen and (min-width: 1200px) {
-        background: linear-gradient(180deg, #84a178 94px, #f5f5f5 0);
-      }
-  }
+        border-radius: 18px;
+        width: 704;
+    }
 
-  .gellery__img{
+    @media screen and (min-width: 1200px) {
+        border-radius: 24px;
+        width: 1013px;
+    }
+}
+
+.gallery__item {
+    width: 279px;
+    height: 130px;
+    overflow: hidden;
     margin: auto;
-  }
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 327px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1013px;
+        height: 422px;
+    }
+
+    .slider {
+        animation: sliderAnimate 25s infinite ease;
+        width: 1395px;
+        height: 130px;
+        clear: both;
+        position: relative;
+
+        @keyframes sliderAnimate {
+            0% {
+                left: 0;
+            }
+            10% {
+                left: -279px;
+            }
+            20% {
+                left: -558px;
+            }
+            30% {
+                left: -837px;
+            }
+            40% {
+                left: -1116px;
+            }
+            50% {
+                left: -1116px;
+            }
+            60% {
+                left: -1116px;
+            }
+            70% {
+                left: -837px;
+            }
+            80% {
+                left: -558px;
+            }
+            90% {
+                left: -279px;
+            }
+            100% {
+                left: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 3520px;
+            height: 327px;
+
+            @keyframes sliderAnimate {
+                0% {
+                    left: 0;
+                }
+                10% {
+                    left: -704px;
+                }
+                20% {
+                    left: -1408px;
+                }
+                30% {
+                    left: -2112px;
+                }
+                40% {
+                    left: -2816px;
+                }
+                50% {
+                    left: -2816px;
+                }
+                60% {
+                    left: -2816px;
+                }
+                70% {
+                    left: -2112px;
+                }
+                80% {
+                    left: -1408px;
+                }
+                90% {
+                    left: -704px;
+                }
+                100% {
+                    left: 0;
+                }
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 5065px;
+            height: 422px;
+
+            @keyframes sliderAnimate {
+                0% {
+                    left: 0;
+                }
+                10% {
+                    left: -1013px;
+                }
+                20% {
+                    left: -2026px;
+                }
+                30% {
+                    left: -3039px;
+                }
+                40% {
+                    left: -4052px;
+                }
+                50% {
+                    left: -4052px;
+                }
+                60% {
+                    left: -4052px;
+                }
+                70% {
+                    left: -3039px;
+                }
+                80% {
+                    left: -2026px;
+                }
+                90% {
+                    left: -1013px;
+                }
+                100% {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.slider-list {
+    display: flex;
+}
