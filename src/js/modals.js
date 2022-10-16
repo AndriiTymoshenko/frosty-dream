@@ -97,9 +97,11 @@ document
         document.body.classList.remove('modal-open');
     });
 
-document.getElementById('open-modal-2').addEventListener('click', function () {
-    document.body.classList.add('modal-open');
-});
+document
+    .getElementById('modal-read-me-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
 document
     .getElementById('modal-read-me-close')
     .addEventListener('click', function () {
