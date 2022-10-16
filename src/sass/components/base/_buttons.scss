@@ -1,122 +1,133 @@
 // Default button
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    min-width: 152px;
-    padding: 12px 34px;
-    border-radius: 10px;
-    border: none;
+  min-width: 152px;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: none;
 
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  cursor: pointer;
 
-    color: $primary-dark-color
+  color: $primary-dark-color;
 }
 
 // How it's made button (Maria)
 
 .button-made {
-    display: inline-block;
-    padding: 10px 0;
-    text-align: center;
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    color: $accent-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: $accent-color;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
-       color: $button-hover-color;
-    }
-    
-    &:focus {
-        color: $primary-light-color;
-    }
-    
-    &:disabled {
-        color: $button-disable-color;
-    }
-
-    @media screen and (max-width: 1199px) {
-        padding: 5px 0;
-
-        font-size: 8px;
-        line-height: 1.25;
-    }
+  &:hover {
+    color: $button-hover-color;
   }
+
+  &:focus {
+    color: $primary-light-color;
+  }
+
+  &:disabled {
+    color: $button-disable-color;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 5px 0;
+
+    font-size: 8px;
+    line-height: 1.25;
+  }
+}
 
 // Buy now button same for Our Locations and Read more (Maria, Serhii, Andrii)
 
 .button-buynow {
-    @extend .button;
-    background-color: $accent-color;
+  @extend .button;
+  background-color: $accent-color;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover {
-        background-color: $button-hover-color;
-    }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus {
-        color: $primary-light-color;
-        background-color: $button-hover-color;
-    }
+  &:hover {
+    background-color: $button-hover-color;
+  }
 
-    &:disabled {
-        background-color: $button-disable-color;
-    }
+  &:focus {
+    color: $primary-light-color;
+    background-color: $button-hover-color;
+  }
+
+  &:disabled {
+    background-color: $button-disable-color;
+  }
 }
 
 // Button Franchise (Serhii)
 
 .button-franchise {
-    @extend .button;
-    background-color: transparent;
-    border: 2px solid $accent-color;
-    padding: 10px 46px;
+  @extend .button;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+  padding: 10px 46px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
-        border-color: $button-hover-color;
-    }
+  &:hover {
+    border-color: $button-hover-color;
+  }
 
-    &:focus {
-        color: $primary-light-color;
-        border-color: $button-hover-color;
-    }
+  &:focus {
+    color: $primary-light-color;
+    border-color: $button-hover-color;
+  }
 
-    &:disabled {
-        border-color: $button-disable-color;
-    }
-
+  &:disabled {
+    border-color: $button-disable-color;
+  }
 }
 
 // Products button (Maria)
 
 .button-products {
-    @extend .button-franchise;
-    padding: 10px 34px;
-    text-decoration: none;
+  @extend .button-franchise;
+  padding: 10px 34px;
+  text-decoration: none;
 
-    @media screen and (max-width: 1199px) {
-        min-width: 62px;
-        padding: 5px 10px;
-        border-radius: 8px;
+  @media screen and (max-width: 1199px) {
+    min-width: 62px;
+    padding: 5px 10px;
+    border-radius: 8px;
 
-        font-size: 8px;
-        line-height: 1.25;
-    }
+    font-size: 8px;
+    line-height: 1.25;
+  }
 }
 
+// Btn arrow mod
 
+.button--arrow {
+  justify-content: space-between;
 
-
+  &::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/btn-arrow.png);
+    width: 12px;
+    height: 12px;
+  }
+}
