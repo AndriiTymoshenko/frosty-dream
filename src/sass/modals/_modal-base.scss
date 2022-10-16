@@ -1,0 +1,93 @@
+// disable scroll while modal is open
+body.modal-open {
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  backdrop-filter: blur(1px);
+  transition: 0.3s all;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  max-width: 280px;
+  max-height: 100vh;
+  padding: 28px;
+
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: $primary-light-color;
+  overflow-y: auto;
+
+  opacity: 0;
+  visibility: hidden;
+
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    padding: 32px 40px;
+  }
+}
+
+.overlay.active,
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.modal__close-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: $primary-dark-color;
+}
+
+.modal__title {
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+
+  color: $primary-dark-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+}
