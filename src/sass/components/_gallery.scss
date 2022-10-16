@@ -1,15 +1,21 @@
-.gallery {
-    background: linear-gradient(180deg, #84a178 24px, #f5f5f5 0);
-
-    @media screen and (min-width: 768px) {
-        background: linear-gradient(180deg, #84a178 164px, #f5f5f5 0);
-    }
-
-    @media screen and (min-width: 1200px) {
-        background: linear-gradient(180deg, #84a178 94px, #f5f5f5 0);
-    }
-}
-
-.gallery__img {
+.gallery__img{
     margin: auto;
+  }
+
+.gallery {
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient($primary-background-color 25%,
+          $primary-light-color 25% 100%);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient($primary-background-color 50%,
+        $primary-light-color 50% 100%);
+  }
+
+  @media screen and (min-width: 1200px){
+    background-image: linear-gradient($primary-background-color 20%,
+        rgba(255, 255, 255, 0) 0% 100%);
+  }
+
 }
