@@ -1,69 +1,135 @@
 <header>
     <div class="page-header container">
         <nav class="nav">
+            <!-- Header -->
             <a href="" class="logo">
                 <picture class="logo-img">
                     <source
-                        srcset="./images/logo/logo-mobile/logo-mobile@1x.png 1x, ./images/logo/logo-mobile/logo-mobile@2x.png 2x"
-                        media="(max-width:767px)" type="image/png">
+                        srcset="
+                            ./images/logo/logo-mobile/logo-mobile@1x.png 1x,
+                            ./images/logo/logo-mobile/logo-mobile@2x.png 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/png"
+                    />
                     <source
-                        srcset="./images/logo/logo-tablet/logo-tablet@1x.png 1x, ./images/logo/logo-tablet/logo-tablet@2x.png 2x"
-                        media="(max-width: 1199px)" type="image/png">
+                        srcset="
+                            ./images/logo/logo-tablet/logo-tablet@1x.png 1x,
+                            ./images/logo/logo-tablet/logo-tablet@2x.png 2x
+                        "
+                        media="(max-width: 1199px)"
+                        type="image/png"
+                    />
                     <source
-                        srcset="./images/logo/logo-desktop/logo-desktop@1x.png 1x, ./images/logo/logo-desktop/logo-desktop@2x.png 2x"
-                        media="(min-width: 1200px)" type="image/png">
-                    <img src="./images/logo/logo-desktop/logo-desktop@1x.png" alt="logo" loading="lazy">
+                        srcset="
+                            ./images/logo/logo-desktop/logo-desktop@1x.png 1x,
+                            ./images/logo/logo-desktop/logo-desktop@2x.png 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/png"
+                    />
+                    <img
+                        src="./images/logo/logo-desktop/logo-desktop@1x.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
                 </picture>
-
             </a>
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="">How it’s made?</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">How it’s made?</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Our products</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Contact</a>
+                </li>
             </ul>
 
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
                 <svg width="32" height="32" aria-label="mobile menu switch">
-                    <use class="icon-menu" href="./images/icons.svg#burger"></use>
+                    <use
+                        class="icon-menu"
+                        href="./images/icons.svg#burger"
+                    ></use>
                 </svg>
             </button>
 
-            <button class="nav__bnt button button-buynow" type="button">Buy now
-                <svg class="nav__bnt--arrow" width="12" height="12">
+            <!-- Button buy now -->
+            <button class="nav__btn button button-buynow" type="button">
+                Buy now
+                <svg class="nav__btn--arrow" width="12" height="12">
                     <use href="./images/icons.svg#arrow-little"></use>
                 </svg>
             </button>
-
         </nav>
 
+        <!-- Mobile menu -->
         <div class="menu-container js-menu-container" id="mobile-menu">
             <a href="" class="logo logo__menu">
                 <picture class="logo-img">
                     <source
-                        srcset="./images/logo/logo-mobile/logo-mobile@1x.png 1x, ./images/logo/logo-mobile/logo-mobile@2x.png 2x"
-                        media="(max-width:767px)" type="image/png">
+                        srcset="
+                            ./images/logo/logo-mobile/logo-mobile@1x.png 1x,
+                            ./images/logo/logo-mobile/logo-mobile@2x.png 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/png"
+                    />
                     <source
-                        srcset="./images/logo/logo-tablet/logo-tablet@1x.png 1x, ./images/logo/logo-tablet/logo-tablet@2x.png 2x"
-                        media="(max-width: 1199px)" type="image/png">
-                    <img src="./images/logo/logo-desktop/logo-desktop@1x.png" alt="logo" loading="lazy">
+                        srcset="
+                            ./images/logo/logo-tablet/logo-tablet@1x.png 1x,
+                            ./images/logo/logo-tablet/logo-tablet@2x.png 2x
+                        "
+                        media="(max-width: 1199px)"
+                        type="image/png"
+                    />
+                    <img
+                        src="./images/logo/logo-desktop/logo-desktop@1x.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
                 </picture>
             </a>
+
+            <!-- Button close -->
             <button type="button" class="menu-toggle js-close-menu">
                 <svg width="32" height="32" aria-label="mobile menu switch">
-                    <use class="icon-cross" href="./images/icons.svg#mobile-menu-button--close"></use>
+                    <use
+                        class="icon-cross"
+                        href="./images/icons.svg#mobile-menu-button--close"
+                    ></use>
                 </svg>
             </button>
 
             <ul class="menu-container__list">
-                <li class="menu-container__item"><a class="menu-container__link" href="">Home</a></li>
-                <li class="menu-container__item"><a class="menu-container__link" href="">How it’s made?</a></li>
-                <li class="menu-container__item"><a class="menu-container__link" href="">Our products</a></li>
-                <li class="menu-container__item"><a class="menu-container__link" href="">Contact</a></li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="">Home</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="">How it’s made?</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="">Our products</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="">Contact</a>
+                </li>
             </ul>
 
-            <button type="button" class="menu-container__btn button button-buynow">Buy now
-                <svg width="12" height="12">
+            <!-- Button buy now mobile -->
+            <button
+                type="button"
+                class="menu-container__btn button button-buynow"
+            >
+                Buy now
+                <svg class="nav__btn--arrow" width="12" height="12">
                     <use href="./images/icons.svg#arrow-little"></use>
                 </svg>
             </button>
