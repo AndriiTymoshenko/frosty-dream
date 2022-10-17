@@ -4,22 +4,22 @@
 }
 .swiper-slide {
     width: 100%;
-    height: 466px;
+    height: 466px !important;
 
     @media screen and (min-width: 360px) {
-        height: 428px;
+        height: 428px !important;
     }
 
     @media screen and (min-width: 446px) {
-        height: 400px;
+        height: 400px !important;
     }
 
     @media screen and (min-width: 768px) {
-        height: 353px;
+        height: 353px !important;
     }
 
     @media screen and (min-width: 1200px) {
-        height: 382px;
+        height: 382px !important;
     }
 }
 .customer-reviews__avatar {
@@ -89,22 +89,19 @@
         margin-bottom: 32px;
     }
 }
-.swiper-pagination {
-    gap: 18px;
-}
 
 .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+    width: 12px !important;
+    height: 12px !important;
 
-    background-color: #d9d9d9;
-    opacity: 1;
+    background-color: #d9d9d9 !important;
+    opacity: 1 !important;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 9px;
+    margin: 0 9px !important;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: $primary-background-color;
+    background-color: $primary-background-color !important;
 }
