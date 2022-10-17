@@ -399,7 +399,7 @@
 
 
 summary {
-  color: red;
+  color: transparent;
 }
 
 .hero-details__inner {
@@ -417,7 +417,7 @@ summary {
   line-height: 1.4;
 
   @media screen and (min-width: 768px) {
-    top: -3px;
+    top: -5px;
     left: 40px;
 
     min-width: 400px;
@@ -426,7 +426,7 @@ summary {
   }
 
   @media screen and (min-width: 1200px) {
-    top: -4px;
+    top: -5px;
     left: 40px;
 
     min-width: 350px;
