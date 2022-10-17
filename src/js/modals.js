@@ -97,10 +97,10 @@ document
         document.body.classList.remove('modal-open');
     });
 
-document.getElementById('open-modal-2').addEventListener('click', function () {
+document.getElementById('modal-read-more').addEventListener('click', function () {
     document.body.classList.add('modal-open');
 });
-document.getElementById('close-modal-2').addEventListener('click', function () {
+document.getElementById('modal-read-more').addEventListener('click', function () {
     document.body.classList.remove('modal-open');
 });
 
@@ -126,15 +126,9 @@ document
         document.body.classList.remove('modal-open');
     });
 
-document.getElementById('open-modal-5').addEventListener('click', function () {
+document.getElementById('modal-ingridients').addEventListener('click', function () {
     document.body.classList.add('modal-open');
 });
-document.getElementById('close-modal-5').addEventListener('click', function () {
-    document.body.classList.remove('modal-open');
-});
-document.getElementById('open-modal-6').addEventListener('click', function () {
-    document.body.classList.add('modal-open');
-});
-document.getElementById('close-modal-6').addEventListener('click', function () {
+document.getElementById('modal-ingridients').addEventListener('click', function () {
     document.body.classList.remove('modal-open');
 });
