@@ -2,8 +2,8 @@
     @media screen and (max-width: 767px) {
         background: linear-gradient(
             transparent 0%,
-            transparent 20%,
-            $primary-background-color 20%
+            transparent 25%,
+            $primary-background-color 25%
         );
     }
 
@@ -18,8 +18,8 @@
     @media screen and (min-width: 1200px) {
         background: linear-gradient(
             transparent 0%,
-            transparent 65%,
-            $primary-background-color 65%
+            transparent 15%,
+            $primary-background-color 15%
         );
     }
 }
