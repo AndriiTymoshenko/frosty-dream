@@ -411,7 +411,7 @@ summary {
   font-weight: 400;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 7px -4px 9px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 7px -4px 9px 1px rgba(0, 0, 0, 0.445);
   background-color: #f8d34eae;
   color: $primary-dark-color;
   line-height: 1.4;
@@ -426,7 +426,7 @@ summary {
   }
 
   @media screen and (min-width: 1200px) {
-    top: -5px;
+    top: -3px;
     left: 40px;
 
     min-width: 350px;
