@@ -12,7 +12,7 @@ body.modal-open {
 
     opacity: 0;
     visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $backdrop-color;
     transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         backdrop-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,7 +26,7 @@ body.modal-open {
     width: 100%;
     max-width: 280px;
     max-height: 100vh;
-    padding: 28px;
+    padding: 20px;
 
     border: 2px solid $accent-color;
     border-radius: 10px;
