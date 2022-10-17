@@ -1,84 +1,168 @@
-<section class="hero container hero-overlay">
-    <div class="hero__main">
-        <div class="main-content">
-            <div class="main-content__article">
+<section class="hero">
+    <div class="container container-hero">
+        <div class="hero__main">
+            <div class="hero__main-container">
                 <h1 class="hero__title">
                     ice cream made with
-                    <span class="hero__title--biger">passion</span>
+                    <span class="hero-title hero__title--uppercase"
+                        >passion</span
+                    >
                 </h1>
-                <a class="hero__btn button button-products" href="#products" type="button">Products</a>
-                <a href="#how-made" class="hero__link button-made">How it’s made?</a>
+                <ul class="hero-list">
+                    <li class="hero-list__item">
+                        <a
+                            class="button-products hero-list__link--products"
+                            href="#products"
+                            >Products</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="button-made hero-list__link--how-made"
+                            href="#how-made"
+                            >How it’s made?</a
+                        >
+                    </li>
+                </ul>
             </div>
-            <ul class="franchise__list">
-                <li class="franchise__item">
-                    <p class="franchise__units">16</p>
-                    <p class="franchise__type">cafes</p>
+
+            <ul class="hero-franchise__list">
+                <li class="hero-franchise__item--bold">
+                    <p class="hero-franchise__unit">16</p>
+                    <p class="hero-franchise__type">cafes</p>
                 </li>
-                <li class="franchise__item">
-                    <p class="franchise__units">23</p>
-                    <p class="franchise__type">food trucks</p>
+                <li class="hero-franchise__item--normal">
+                    <p class="hero-franchise__unit">23</p>
+                    <p class="hero-franchise__type">food trucks</p>
                 </li>
             </ul>
-        </div>
-        <div class="hero__picture">
-            <picture class="big-ice-cream">
+
+            <!-- Dots picture -->
+            <picture>
                 <source
-                    srcset="./images/hero/ice-cream-mobile/ice-cream-mb@1x.png 1x, ./images/hero/ice-cream-mobile/ice-cream-mb@2x.png 2x"
-                    media="(max-width:767px)" type="image/png">
+                    srcset="
+                        ./images/hero/desktop-dots/desktop-dots@1x.png 1x,
+                        ./images/hero/desktop-dots/desktop-dots@2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                />
                 <source
-                    srcset="./images/hero/ice-cream-tablet/ice-cream-tablet@1x.png, ./images/hero/ice-cream-tablet/ice-cream-tablet@2x.png 2x"
-                    media="(max-width: 1199px)" type="image/png">
+                    srcset="
+                        ./images/hero/tablet-dots/tablet-dots@1x.png 1x,
+                        ./images/hero/tablet-dots/tablet-dots@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                />
                 <source
-                    srcset="./images/hero/ice-cream-desktop/ice-cream-dt@1x.png, ./images/hero/ice-cream-desktop/ice-cream-dt@2x.png 2x"
-                    media="(min-width: 1200px)" type="image/png">
-                <img src="./images/hero/ice-cream-desktop/ice-cream-dt@1x.png" alt="big ice-cream" loading="lazy">
+                    srcset="
+                        ./images/hero/mobile-dots/mobile-dots@1x.png 1x,
+                        ./images/hero/mobile-dots/mobile-dots@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    class="hero__image hero__image--dots"
+                    src="./images/hero/mobile-dots/mobile-dots@1x.png"
+                    alt="Dots"
+                />
             </picture>
+
+            <!-- Ice-cream glow pic and ice-cream pic -->
+            <div class="image-wrapper">
+                <div class="glow-wrapper">
+                    <picture>
+                        <source
+                            srcset="
+                                ./images/hero/ice-cream-desktop/ice-cream-dt-glow@1x.png 1x,
+                                ./images/hero/ice-cream-desktop/ice-cream-dt-glow@2x.png 2x
+                            "
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./images/hero/ice-cream-tablet/ice-cream-tb-glow@1x.png 1x,
+                                ./images/hero/ice-cream-tablet/ice-cream-tb-glow@2x.png 2x
+                            "
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./images/hero/ice-cream-mobile/ice-cream-mb-glow@1x.png 1x,
+                                ./images/hero/ice-cream-mobile/ice-cream-mb-glow@2x.png 2x
+                            "
+                            media="(max-width: 767px)"
+                        />
+                        <img
+                            class="hero__image hero__image--icecream"
+                            src="./images/hero/ice-cream-mobile/ice-cream-mb-glow@1x.png"
+                            alt="Ice cream"
+                        />
+                    </picture>
+                </div>
+
+                <picture>
+                    <source
+                        srcset="
+                            ./images/hero/ice-cream-desktop/ice-cream-dt@1x.png 1x,
+                            ./images/hero/ice-cream-desktop/ice-cream-dt@2x.png 2x
+                        "
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ./images/hero/ice-cream-tablet/ice-cream-tb@1x.png 1x,
+                            ./images/hero/ice-cream-tablet/ice-cream-tb@2x.png 2x
+                        "
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="
+                            ./images/hero/ice-cream-mobile/ice-cream-mb@1x.png 1x,
+                            ./images/hero/ice-cream-mobile/ice-cream-mb@2x.png 2x
+                        "
+                        media="(max-width: 767px)"
+                    />
+                    <img
+                        class="hero__image hero__image--icecream"
+                        src="./images/hero/ice-cream-mobile/ice-cream-mb@1x.png"
+                        alt="Ice cream"
+                    />
+                </picture>
+            </div>
         </div>
-    </div>
 
-    <div class="details">
-        <picture class="details__img">
-            <source
-                srcset="./images/hero/plate-ice-cream-tablet/plate-ice-cream-tb@1x.png 1x, ./images/hero/plate-ice-cream-tablet/plate-ice-cream-tb@2x.png 2x"
-                media="(max-width: 1199px)" type="image/png">
-            <source
-                srcset="./images/hero/plate-ice-cream-desktop/plate-ice-cream-dt@1x.png 1x, ./images/hero/plate-ice-cream-desktop/plate-ice-cream-dt@2x.png 2x"
-                media="(min-width:1200px)" type="image/png">
-            <img src="./images/hero/plate-ice-cream-desktop/plate-ice-cream-dt@1x.png" alt="plate ice-creams"
-                loading="lazy">
-        </picture>
-
-        <div class="details__paragraph">
-            <p class="details__dsc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
+        <div class="hero-details">
+            <p class="hero-details__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
             </p>
-            <details class="details--more-information">
-                <summary><svg class="details--arrow" width="40" height="16">
-                        <use href="./images/icons.svg#white-arrow"></use>
-                    </svg></summary>
-
-                <p class="details__dsc--inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-                    non soluta harum nulla aliquid in, temporibus dolores fugit alias</p>
-            </details>
+            <a class="hero-details__link" href="">
+                <svg width="40" height="15">
+                    <use href="./images/icons.svg#white-arrow"></use>
+                </svg>
+            </a>
         </div>
-
+        <!-- ====== ICECREAM ====== -->
+        <picture>
+            <source
+                srcset="
+                    ./images/hero/plate-ice-cream-desktop/plate-ice-cream-dt@1x.png 1x,
+                    ./images/hero/plate-ice-cream-desktop/plate-ice-cream-dt@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+            />
+            <source
+                srcset="
+                    ./images/hero/plate-ice-cream-tablet/plate-ice-cream-tb@1x.png 1x,
+                    ./images/hero/plate-ice-cream-tablet/plate-ice-cream-tb@2x.png 2x
+                "
+                media="(min-width: 768px)"
+            />
+            <img
+                class="hero__image hero__image--plate"
+                src="./images/hero/plate-ice-cream-tablet/plate-ice-cream-tb@1x.png"
+                alt="Ice cream"
+            />
+        </picture>
     </div>
-
-    <!-- якщо використувувати зображення з абсолютним позиціонуванням
-        <div class="dots">
-            <picture class="dots__img">
-                <source
-                    srcset="./images/hero/mobile-dots/mobile-dots@1x.png 1x, ./images/hero/mobile-dots/mobile-dots@2x.png 2x"
-                    media="(max-width:767px)" type="image/png">
-                <source
-                    srcset="./images/hero/tablet-dots/tablet-dots@1x.png 1x, ./images/hero/tablet-dots/tablet-dots@2x.png 2x"
-                    media="(max-width: 1199px)" type="image/png">
-                <source
-                    srcset="./images/hero/desktop-dots/desktop-dots@1x.png 1x, ./images/hero/desktop-dots/desktop-dots@2x.png 2x"
-                    media="(min-width: 1200px)" type="image/png">
-                <img class="points" src="./images/hero/desktop-dots/desktop-dots@1x.png" alt="points" loading="lazy">
-            </picture>
-        </div>
-        -->
-
 </section>
