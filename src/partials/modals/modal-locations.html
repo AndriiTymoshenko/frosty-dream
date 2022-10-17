@@ -1,17 +1,55 @@
-<div class="overlay js-overlay-modal">
-</div>
+<div class="overlay js-overlay-modal"></div>
 
-<div class="modal" data-modal="">
-
+<div class="modal location" data-modal="3">
     <!-- close button -->
-    <button class="modal__close-btn js-modal-close" type="button" id="close-modal-5">
+    <button
+        class="modal__close-btn js-modal-close"
+        type="button"
+        id="modal-location-close"
+    >
         <svg class="modal__close-icon">
-            <use class="modal-close__vector" href="./images/icons.svg#close-little"></use>
+            <use
+                class="modal-close__vector"
+                href="./images/icons.svg#close-little"
+            ></use>
         </svg>
     </button>
 
     <!-- title -->
-    <h2 class="modal__title"></h2>
+    <h2 class="modal__title">Our Locations</h2>
 
+    <picture>
+        <source
+            media="(min-width: 480px)"
+            srcset="
+                ./images/desktop-map-@1x.jpg 1x,
+                ./images/desktop-map-@2x.jpg 2x
+            "
+            type="image/jpg"
+        />
+        <source
+            media="(max-width: 479px)"
+            srcset="
+                ./images/mobile-map-@1x.jpg 1x,
+                ./images/mobile-map-@2x.jpg 2x
+            "
+            type="image/jpg"
+        />
+        <img
+            class="location__image"
+            src="./images/mobile-map-@1x.jpg"
+            alt="ice-cream"
+            width="224"
+            height="199"
+            loading="lazy"
+        />
+    </picture>
 
+    <a
+        class="location__btn button button-buynow"
+        href="https://www.google.com/maps/d/edit?hl=ru&mid=1SRAeCgoIUPrFWTEfVgCF7apZBA9xijs&ll=36.75808471904436%2C-96.1825313&z=5"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Open map</a
+    >
 </div>

@@ -1,12 +1,17 @@
-<div class="overlay js-overlay-modal">
-</div>
+<div class="overlay js-overlay-modal"></div>
 
 <div class="modal ingredients" data-modal="5">
-
     <!-- close button -->
-    <button class="modal__close-btn js-modal-close" type="button" id="close-modal-5">
+    <button
+        class="modal__close-btn js-modal-close"
+        type="button"
+        id="close-modal-5"
+    >
         <svg class="modal__close-icon">
-            <use class="modal-close__vector" href="./images/icons.svg#close-little"></use>
+            <use
+                class="modal-close__vector"
+                href="./images/icons.svg#close-little"
+            ></use>
         </svg>
     </button>
 
@@ -14,13 +19,28 @@
     <h2 class="modal__title">Chololate icecream</h2>
 
     <div class="ingredients__image-wrapper">
-
         <picture>
-            <source media="(min-width: 768px)" srcset="./images/choco-dt@1x.jpg 1x,./images/choco-dt@2x.jpg 2x"
-                type="image/jpg" />
-            <source media="(max-width: 767px)" srcset="./images/choco-mb@1x.jpg 1x,./images/choco-mb@2x.jpg 2x"
-                type="image/jpg" />
-            <img class="ingredients__image" src="./images/choco-mb@1x.jpg" alt="ice aream">
+            <source
+                media="(min-width: 768px)"
+                srcset="
+                    ./images/choco-dt@1x.jpg 1x,
+                    ./images/choco-dt@2x.jpg 2x
+                "
+                type="image/jpg"
+            />
+            <source
+                media="(max-width: 767px)"
+                srcset="
+                    ./images/choco-mb@1x.jpg 1x,
+                    ./images/choco-mb@2x.jpg 2x
+                "
+                type="image/jpg"
+            />
+            <img
+                class="ingredients__image"
+                src="./images/choco-mb@1x.jpg"
+                alt="ice aream"
+            />
         </picture>
         <div class="ingredients__circle"></div>
     </div>
@@ -47,9 +67,7 @@
         </li>
     </ul>
 
-    <h3 class="ingredients__subtitle">
-        Ingredients
-    </h3>
+    <h3 class="ingredients__subtitle">Ingredients</h3>
 
     <ul class="ingredients__list">
         <li class="ingredients__item">
@@ -84,18 +102,31 @@
     </ul>
 
     <form class="ingredients__form form">
-        <input class="form__input ingredients__name" name="user-name" type="text" placeholder="Name"
-            pattern="[a-z]{1,15}" required />
-        <input class="form__input" name="user-tel" type="tel" placeholder="Phone" pattern="[0-9]{3,15}" required />
+        <input
+            class="form__input ingredients__name"
+            name="user-name"
+            type="text"
+            placeholder="Name"
+            pattern="[a-z]{1,15}"
+            required
+        />
+        <input
+            class="form__input"
+            name="user-tel"
+            type="tel"
+            placeholder="Phone"
+            pattern="[0-9]{3,15}"
+            required
+        />
 
-        <textarea class="ingredients__textarea form__textarea" placeholder="Comment" name="user-comment"
-            autocomplete="off"></textarea>
+        <textarea
+            class="ingredients__textarea form__textarea"
+            placeholder="Comment"
+            name="user-comment"
+            autocomplete="off"
+        ></textarea>
         <button class="button form__submit button-buynow" type="submit">
             Submit
         </button>
-
     </form>
-
-
-
 </div>

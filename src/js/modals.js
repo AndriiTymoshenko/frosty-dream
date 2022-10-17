@@ -97,30 +97,34 @@ document
         document.body.classList.remove('modal-open');
     });
 
+document.getElementById('open-modal-2').addEventListener('click', function () {
+    document.body.classList.add('modal-open');
+});
+document.getElementById('close-modal-2').addEventListener('click', function () {
+    document.body.classList.remove('modal-open');
+});
+
 document
-    .getElementById('modal-read-me-open')
+    .getElementById('modal-location-open')
     .addEventListener('click', function () {
         document.body.classList.add('modal-open');
     });
 document
-    .getElementById('modal-read-me-close')
+    .getElementById('modal-location-close')
     .addEventListener('click', function () {
         document.body.classList.remove('modal-open');
     });
 
-document.getElementById('open-modal-3').addEventListener('click', function () {
-    document.body.classList.add('modal-open');
-});
-document.getElementById('close-modal-3').addEventListener('click', function () {
-    document.body.classList.remove('modal-open');
-});
-
-document.getElementById('open-modal-4').addEventListener('click', function () {
-    document.body.classList.add('modal-open');
-});
-document.getElementById('close-modal-4').addEventListener('click', function () {
-    document.body.classList.remove('modal-open');
-});
+document
+    .getElementById('modal-franchise-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-franchise-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });
 
 document.getElementById('open-modal-5').addEventListener('click', function () {
     document.body.classList.add('modal-open');
