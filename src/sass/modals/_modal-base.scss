@@ -1,127 +1,135 @@
 // disable scroll while modal is open
 body.modal-open {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-  opacity: 0;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    backdrop-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    background-color: $backdrop-color;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        backdrop-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
-  position: fixed;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  max-width: 280px;
-  max-height: 100vh;
-  padding: 28px;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 280px;
+    max-height: 100vh;
+    padding: 20px;
 
-  border: 2px solid $accent-color;
-  border-radius: 10px;
-  transform: translate(-50%, -50%);
-  background-color: $primary-light-color;
-  overflow-y: auto;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-color: $primary-light-color;
+    overflow-y: auto;
 
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 
-  @media screen and (min-width: 768px) {
-    max-width: 568px;
-    padding: 32px 40px;
-  }
+    @media screen and (min-width: 768px) {
+        max-width: 568px;
+        padding: 32px 40px;
+    }
 }
 
 .overlay.active,
 .modal.active {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 16px;
-  height: 16px;
-  padding: 0;
-  margin: 0;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
 
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
-  @media screen and (min-width: 768px) {
-    top: 20px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
-  }
+    @media screen and (min-width: 768px) {
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .modal__close-icon {
-  display: block;
-  width: 100%;
-  height: 100%;
-  fill: $primary-dark-color;
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
 }
 
 .modal__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  text-align: center;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    text-align: center;
 
-  color: $primary-dark-color;
+    color: $primary-dark-color;
 
-  @media screen and (min-width: 768px) {
-    font-size: 20px;
-    line-height: calc(28 / 20);
-  }
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: calc(28 / 20);
+    }
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form__input,
 .form__textarea {
-  display: block;
-  width: 100%;
-  max-width: 244px;
-  margin-top: 12px;
-  padding: 8px 12px 8px 12px;
-  background: $input-background;
-  border: 1px solid $primary-background-color;
-  border-radius: 10px;
+    display: block;
+    width: 100%;
+    max-width: 244px;
+    margin-top: 12px;
+    padding: 8px 12px 8px 12px;
+    background: $input-background;
+    border: 1px solid $primary-background-color;
+    border-radius: 10px;
 
-  @media screen and (min-width: 768px) {
-    max-width: 368px;
-  }
+    @media screen and (min-width: 768px) {
+        max-width: 368px;
+    }
 }
 .form__input:not(:placeholder-shown):required:invalid {
-  outline: 2px #ff4040;
-  border: 2px solid #ff4040;
+    outline: 2px #ff4040;
+    border: 2px solid #ff4040;
 }
 .form__input:not(:placeholder-shown):required:valid {
-  outline: 2px #019f41;
-  border: 2px solid #019f41;
+    outline: 2px #019f41;
+    border: 2px solid #019f41;
 }
 
 .form__submit {
-  margin-top: 24px;
+    margin-top: 24px;
 }

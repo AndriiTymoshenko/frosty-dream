@@ -1,17 +1,132 @@
-<div class="overlay js-overlay-modal">
-</div>
+<div class="overlay js-overlay-modal"></div>
 
-<div class="modal" data-modal="">
-
+<div class="modal ingredients" data-modal="5">
     <!-- close button -->
-    <button class="modal__close-btn js-modal-close" type="button" id="close-modal-4">
+    <button
+        class="modal__close-btn js-modal-close"
+        type="button"
+        id="close-modal-5"
+    >
         <svg class="modal__close-icon">
-            <use class="modal-close__vector" href="./images/icons.svg#close-little"></use>
+            <use
+                class="modal-close__vector"
+                href="./images/icons.svg#close-little"
+            ></use>
         </svg>
     </button>
 
     <!-- title -->
-    <h2 class="modal__title"></h2>
+    <h2 class="modal__title">Chololate icecream</h2>
 
+    <div class="ingredients__image-wrapper">
+        <picture>
+            <source
+                media="(min-width: 768px)"
+                srcset="
+                    ./images/choco-dt@1x.jpg 1x,
+                    ./images/choco-dt@2x.jpg 2x
+                "
+                type="image/jpg"
+            />
+            <source
+                media="(max-width: 767px)"
+                srcset="
+                    ./images/choco-mb@1x.jpg 1x,
+                    ./images/choco-mb@2x.jpg 2x
+                "
+                type="image/jpg"
+            />
+            <img
+                class="ingredients__image"
+                src="./images/choco-mb@1x.jpg"
+                alt="ice aream"
+            />
+        </picture>
+        <div class="ingredients__circle"></div>
+    </div>
 
+    <ul class="ovals">
+        <li class="ovals__item">
+            <div class="ovals__ball">320</div>
+            <p class="ovals__caption">kcal</p>
+        </li>
+
+        <li class="ovals__item">
+            <div class="ovals__ball">4g</div>
+            <p class="ovals__caption">Prote...</p>
+        </li>
+
+        <li class="ovals__item">
+            <div class="ovals__ball">8,2g</div>
+            <p class="ovals__caption">Fats</p>
+        </li>
+
+        <li class="ovals__item">
+            <div class="ovals__ball">40,4g</div>
+            <p class="ovals__caption">Carbs</p>
+        </li>
+    </ul>
+
+    <h3 class="ingredients__subtitle">Ingredients</h3>
+
+    <ul class="ingredients__list">
+        <li class="ingredients__item">
+            <span>Milk</span>
+            <span>100ml</span>
+        </li>
+
+        <li class="ingredients__item">
+            <span>Belgian chocolate</span>
+            <span>20g</span>
+        </li>
+
+        <li class="ingredients__item">
+            <span>Cream</span>
+            <span>150 ml</span>
+        </li>
+
+        <li class="ingredients__item">
+            <span>Cocoa powder</span>
+            <span>30g</span>
+        </li>
+
+        <li class="ingredients__item">
+            <span>Sugar</span>
+            <span>40g</span>
+        </li>
+
+        <li class="ingredients__item">
+            <span>Vanilla sugar</span>
+            <span>10g</span>
+        </li>
+    </ul>
+
+    <form class="ingredients__form form">
+        <input
+            class="form__input ingredients__name"
+            name="user-name"
+            type="text"
+            placeholder="Name"
+            pattern="[a-z]{1,15}"
+            required
+        />
+        <input
+            class="form__input"
+            name="user-tel"
+            type="tel"
+            placeholder="Phone"
+            pattern="[0-9]{3,15}"
+            required
+        />
+
+        <textarea
+            class="ingredients__textarea form__textarea"
+            placeholder="Comment"
+            name="user-comment"
+            autocomplete="off"
+        ></textarea>
+        <button class="button form__submit button-buynow" type="submit">
+            Submit
+        </button>
+    </form>
 </div>
