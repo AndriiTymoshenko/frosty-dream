@@ -256,6 +256,10 @@
   }
 }
 
+.hero-details {
+  position: relative;
+}
+
 .hero-details__text {
   @media screen and (max-width: 767px) {
     display: none;
@@ -277,6 +281,7 @@
     max-width: 200px;
   }
 }
+
 
 .hero-franchise__list {
   @extend %list;
@@ -387,5 +392,56 @@
   &:hover,
   &:focus {
     scale: 1.3;
+  }
+}
+
+.hero-details__det {
+  position: absolute;
+
+  @media screen and (min-width: 768px) {
+    top: 99px;
+    left: 30;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 93px;
+    left: 285px;
+  }
+}
+
+summary {
+  color: transparent;
+}
+
+.hero-details__dsc--inside {
+  position: absolute;
+
+  z-index: 15;
+  padding: 5px;
+
+  font-weight: 400;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+  background-color: #f8d34eae;
+  color: $primary-dark-color;
+  line-height: 1.4;
+
+  @media screen and (min-width: 768px) {
+    top: 0;
+    left: 17px;
+
+    min-width: 300px;
+
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 0;
+    left: 16px;
+
+    min-width: 350px;
+
+    font-size: 14px;
   }
 }
