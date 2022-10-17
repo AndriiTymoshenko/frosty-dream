@@ -86,6 +86,8 @@ document.addEventListener('DOMContentLoaded', function () {
 }); // end ready
 
 // no scroll
+
+// modal "buy now"
 document
     .getElementById('modal-buy-now-open')
     .addEventListener('click', function () {
@@ -97,13 +99,19 @@ document
         document.body.classList.remove('modal-open');
     });
 
-document.getElementById('modal-read-more').addEventListener('click', function () {
-    document.body.classList.add('modal-open');
-});
-document.getElementById('modal-read-more').addEventListener('click', function () {
-    document.body.classList.remove('modal-open');
-});
+// modal "read more"
+document
+    .getElementById('modal-read-more-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-read-more-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });
 
+// modal "location"
 document
     .getElementById('modal-location-open')
     .addEventListener('click', function () {
@@ -115,6 +123,7 @@ document
         document.body.classList.remove('modal-open');
     });
 
+// modal "franchise"
 document
     .getElementById('modal-franchise-open')
     .addEventListener('click', function () {
@@ -126,9 +135,38 @@ document
         document.body.classList.remove('modal-open');
     });
 
-document.getElementById('modal-ingridients').addEventListener('click', function () {
-    document.body.classList.add('modal-open');
-});
-document.getElementById('modal-ingridients').addEventListener('click', function () {
-    document.body.classList.remove('modal-open');
-});
+// modal "ingredients"
+//  ingredients-top
+document
+    .getElementById('modal-ingredients-top-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-ingredients-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });
+//  ingredients-middle
+document
+    .getElementById('modal-ingredients-mid-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-ingredients-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });
+
+//  ingredients-bottom
+document
+    .getElementById('modal-ingredients-bot-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-ingredients-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });

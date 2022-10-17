@@ -1,6 +1,23 @@
 .franchise__text {
     margin-top: 20px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+
+    @media screen and (min-width: 768px) {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: calc(22 / 16);
+    }
 }
+
 .franchise__user-name {
     margin-top: 24px;
+}
+
+.franchise__textarea {
+    height: 64px;
+
+    @media screen and (min-width: 768px) {
+        height: 84px;
+    }
 }
