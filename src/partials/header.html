@@ -36,7 +36,9 @@
                 </picture>
             </a>
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#home">Home</a>
+                </li>
                 <li class="nav__item">
                     <a class="nav__link" href="#how-made">How it’s made?</a>
                 </li>
@@ -118,10 +120,14 @@
                     <a class="menu-container__link" href="#home">Home</a>
                 </li>
                 <li class="menu-container__item">
-                    <a class="menu-container__link" href="#how-made">How it’s made?</a>
+                    <a class="menu-container__link" href="#how-made"
+                        >How it’s made?</a
+                    >
                 </li>
                 <li class="menu-container__item">
-                    <a class="menu-container__link" href="#products">Our products</a>
+                    <a class="menu-container__link" href="#products"
+                        >Our products</a
+                    >
                 </li>
                 <li class="menu-container__item">
                     <a class="menu-container__link" href="#contacts">Contact</a>
@@ -131,7 +137,9 @@
             <!-- Button buy now mobile -->
             <button
                 type="button"
-                class="menu-container__btn button button-buynow"
+                class="menu-container__btn button-buynow js-open-modal"
+                data-modal="1"
+                id="modal-buy-now-open"
             >
                 Buy now
                 <svg class="nav__btn--arrow" width="12" height="12">
