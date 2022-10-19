@@ -329,24 +329,13 @@
     position: relative;
 }
 
-.hero-details__link {
-    display: inline-block;
-
-    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        scale: 1.3;
-    }
-}
-
 summary {
     color: transparent;
     display: inline-block;
     margin-left: 0;
 }
 
-.hero-detail__icon {
+.hero-details__icon {
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
