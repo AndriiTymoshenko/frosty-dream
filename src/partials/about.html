@@ -1,24 +1,38 @@
 <section class="about section" id="how-made">
     <div class="about__container container">
         <p class="about__title-label">tradition and love</p>
-        <h2 class="title title--darck about__title">how it’s made?</h2>
+        <h2 class="about__title">how it’s made?</h2>
         <div class="about__flex-cont">
             <div class="about__img-bg">
-                <img
-                    class="about__img"
-                    srcset="
-                        ./images/about/cow-mb_278w.png 278w,
-                        ./images/about/cow-mb_556w.png 556w,
-                        ./images/about/cow-tb_335w.png 335w,
-                        ./images/about/cow-tb_670w.png 670w,
-                        ./images/about/cow-dt_490w.png 490w,
-                        ./images/about/cow-dt_980w.png 980w
-                    "
-                    sizes="(min-width: 1200px), (min-width: 768px), (min-width: 480px), 100vw"
-                    src="./images/about/cow-mb_278w.png"
-                    alt="cow in the meadow"
-                    loading="lazy"
-                />
+                <picture>
+                    <source
+                        srcset="
+                            ./images/about/cow-mb@1x.png 1x,
+                            ./images/about/cow-mb@2x.png 2x
+                        "
+                        media="(max-width: 767px)"
+                    />
+                    <source
+                        srcset="
+                            ./images/about/cow-tb@1x.png 1x,
+                            ./images/about/cow-tb@2x.png 2x
+                        "
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="
+                            ./images/about/cow-dt@1x.png 1x,
+                            ./images/about/cow-dt@2x.png 2x
+                        "
+                        media="(min-width: 1200px)"
+                    />
+                    <img
+                        class="about__img"
+                        src="./images/about/cow-dt@1x.png"
+                        alt="cow in the meadow"
+                        loading="lazy"
+                    />
+                </picture>
             </div>
             <div class="about__flex-cont about__flex-desc">
                 <div class="about__desc-cont">
