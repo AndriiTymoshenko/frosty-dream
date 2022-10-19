@@ -68,11 +68,6 @@
     &__desc3 {
         display: none;
     }
-
-    &__btn {
-        width: 164px;
-        height: 42px;
-    }
 }
 
 @media screen and (min-width: 480px) {
@@ -174,13 +169,12 @@
         }
 
         &__desc {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 194%;
             max-width: 463px;
         }
 
         &__desc1 {
-            font-size: 16px;
             line-height: 176%;
         }
 

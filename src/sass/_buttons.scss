@@ -55,7 +55,9 @@
 
 // Buy now button same for Our Locations and Read more (Maria, Serhii, Andrii)
 
-.button-buynow {
+.button-buynow,
+.button-readmore,
+.button-locations {
     @extend .button;
     background-color: $accent-color;
 
@@ -115,30 +117,6 @@
 
         font-size: 8px;
         line-height: 1.25;
-    }
-}
-
-// Btn arrow mod
-
-.button--arrow {
-    justify-content: space-between;
-
-    &::after {
-        content: '';
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-        background-image: url(../images/btn-arrow@1x.png);
-
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            background-image: url(../images/btn-arrow@2x.png);
-        }
-        width: 12px;
-        height: 12px;
     }
 }
 
