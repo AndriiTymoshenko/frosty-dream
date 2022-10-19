@@ -3,6 +3,7 @@
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
     const nav = document.querySelectorAll('.menu-container__item');
+    const buyNowBtn = document.querySelectorAll('.button-buynow');
 
     const toggleMenu = () => {
         const isMenuOpen =
@@ -22,6 +23,13 @@
 
     for (var i = 0; i < nav.length; i++) {
         nav[i].onclick = function (e) {
+            e.preventDefault();
+            mobileMenu.classList.remove('is-open');
+        };
+    }
+
+    for (var i = 0; i < nav.length; i++) {
+        buyNowBtn[i].onclick = function (e) {
             e.preventDefault();
             mobileMenu.classList.remove('is-open');
         };
