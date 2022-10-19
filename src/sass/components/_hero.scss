@@ -162,7 +162,7 @@
     pointer-events: none;
 
     animation-name: blink-glow;
-    animation-duration: 1500ms;
+    animation-duration: 2000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -198,11 +198,11 @@
     }
 
     50% {
-        scale: 0.9;
+        scale: 1;
     }
 
     100% {
-        scale: 1;
+        scale: 1.2;
     }
 }
 
@@ -395,6 +395,8 @@
 
 summary {
     color: transparent;
+    display: inline-block;
+    margin-left: 0;
 }
 
 .hero-details__inner {
@@ -412,20 +414,25 @@ summary {
     line-height: 1.4;
 
     @media screen and (min-width: 768px) {
-        top: -5px;
-        left: 40px;
+        top: 93px;
+        left: 50px;
 
-        min-width: 400px;
+        min-width: 230px;
 
         font-size: 12px;
     }
 
     @media screen and (min-width: 1200px) {
-        top: -3px;
-        left: 40px;
+        top: 125px;
+        left: 255px;
 
         min-width: 350px;
 
         font-size: 14px;
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
     }
 }
