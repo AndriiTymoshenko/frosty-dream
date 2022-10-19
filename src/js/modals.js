@@ -170,3 +170,8 @@ document
     .addEventListener('click', function () {
         document.body.classList.remove('modal-open');
     });
+
+// overlay
+document.getElementById('overlay-close').addEventListener('click', function () {
+    document.body.classList.remove('modal-open');
+});

@@ -123,6 +123,11 @@ body.modal-open {
         max-width: 368px;
     }
 }
+
+.form__textarea {
+    resize: none;
+}
+
 .form__input:not(:placeholder-shown):required:invalid {
     outline: 2px #ff4040;
     border: 2px solid #ff4040;
