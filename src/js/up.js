@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('body').append('<a href="#" id="go-top">&#8593;</a>');
+    $('body').append('<a href="#" id="go-top">&#8679;</a>');
 });
 $(function () {
     $.fn.scrollToTop = function () {
