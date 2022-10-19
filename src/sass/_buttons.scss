@@ -141,3 +141,39 @@
         height: 12px;
     }
 }
+
+// Up button
+
+#go-top {
+    position: fixed;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    background: $accent-color;
+
+    transition: background 250ms linear, color 250ms linear;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.4);
+        color: $primary-light-color;
+    }
+
+    @media screen and (max-width: 767px) {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        bottom: 70px;
+        right: 70px;
+    }
+}
